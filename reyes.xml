@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio1.xsl"?>
+<reyes>
+  <persona>
+    <nombre>Reina Victoria</nombre>
+    <vida nacimiento="1819" pais="Reino Unido" muerte="1901" />
+    <monarca>
+      <cargo>Reina</cargo>
+      <pais>Reino Unido</pais>
+    </monarca>
+  </persona>
+
+  <persona>
+    <nombre>Emperatriz Victoria</nombre>
+    <vida nacimiento="1840" pais="Reino Unido" muerte="1901" />
+    <monarca>
+      <cargo>Emperatriz</cargo>
+      <pais>Alemania</pais>
+    </monarca>
+  </persona>
+
+  <persona>
+    <nombre>Princesa Alicia</nombre>
+    <vida nacimiento="1843" pais="Reino Unido" muerte="1878" />
+  </persona>
+
+  <persona>
+    <nombre>Princesa Beatriz</nombre>
+    <vida nacimiento="1857" pais="Reino Unido" muerte="1944" />
+  </persona>
+
+  <persona>
+    <nombre>Guillermo II</nombre>
+    <vida nacimiento="1859" pais="Alemania" muerte="1941" />
+    <monarca>
+      <cargo>Emperador</cargo>
+      <pais>Alemania</pais>
+    </monarca>
+  </persona>
+
+  <persona>
+    <nombre>Reina Sofía</nombre>
+    <vida nacimiento="1870" pais="Alemania" muerte="1932" />
+    <monarca>
+      <cargo>Reina</cargo>
+      <pais>Grecia</pais>
+    </monarca>
+  </persona>
+
+  <persona>
+    <nombre>Victoria Eugenia de Battenger</nombre>
+    <vida nacimiento="1887" pais="Alemania" muerte="1969" />
+    <monarca>
+      <cargo>Reina</cargo>
+      <pais>España</pais>
+    </monarca>
+  </persona>
+
+  <persona>
+    <nombre>Emperatriz Alexandra</nombre>
+    <vida nacimiento="1872" pais="Alemania" muerte="1918" />
+    <monarca>
+      <cargo>Emperatriz</cargo>
+      <pais>Rusia</pais>
+    </monarca>
+  </persona>
+
+  <relacion>
+    <padre>Reina Victoria</padre>
+    <hijo>Emperatriz Victoria</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Reina Victoria</padre>
+    <hijo>Princesa Alicia</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Reina Victoria</padre>
+    <hijo>Princesa Beatriz</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Emperatriz Victoria</padre>
+    <hijo>Reina Sofía</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Emperatriz Victoria</padre>
+    <hijo>Guillermo II</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Princesa Beatriz</padre>
+    <hijo>Victoria Eugenia de Battenberg</hijo>
+  </relacion>
+
+  <relacion>
+    <padre>Princesa Alicia</padre>
+    <hijo>Emperatriz Alexandra</hijo>
+  </relacion>
+</reyes>
