@@ -29,7 +29,7 @@ public class Main {
         ResourceBundle bundle = ResourceBundle.getBundle("ApplicationMessages");
         log.trace("Trace message");
         log.info("Log Test");
-        ResourceBundle bundleEN = ResourceBundle.getBundle("ApplicationMessages_us_EN", Locale.US);
+
         currentBundle = bundle;
 
 
