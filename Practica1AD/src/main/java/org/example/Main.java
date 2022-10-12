@@ -26,7 +26,7 @@ public class Main {
 
     static boolean gameEnd = false;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         log.trace("Starting program" );
 
@@ -40,7 +40,7 @@ public class Main {
         log.trace("Game ended" );
     }
 
-    private static void menu() throws IOException {
+    private static void menu() {
         log.trace("Entering in function menu");
         println("Welcome");
         println("Menu_Option");
@@ -74,12 +74,12 @@ public class Main {
         validateNumber(1,2);
         try {
             log.trace("Checking what difficulty to switch to");
-            if (choice == "1") {
+            if (choice.equals("1")) {
                 properties.setProperty("difficulty", "1");
                 properties.store(new BufferedWriter(new FileWriter("config/config.properties")), "ChangeLanguage");
                 log.trace("Changing to easy difficulty");
             }
-            else if (choice == "2") properties.setProperty("difficulty", "2");
+            else if (choice.equals("2")) properties.setProperty("difficulty", "2");
             properties.store(new BufferedWriter(new FileWriter("config/config.properties")), "ChangeLanguage");
             log.trace("Changing to hard difficulty");
         } catch (IOException e) {
@@ -264,10 +264,12 @@ public class Main {
         System.out.println(currentBundle.getString(key));
 
     }
-    private static void print(String key) {
+
+/* No implementation
+   private static void print(String key) {
         log.trace("Entering in function println and printing string from configuration");
 
         System.out.println(currentBundle.getString(key));
 
-    }
+    }*/
 }
