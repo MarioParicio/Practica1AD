@@ -142,6 +142,8 @@ public class Main {
 
     private static void getWinner() {
         log.trace("Entering in function getWinner");
+        if (properties.getProperty("difficulty").equals("2")) gamesDifficult += 1;
+        if (gamesDifficult == 4) gamesDifficult = 0;
         if (properties.getProperty("difficulty").equals("1")  || gamesDifficult == 1  || gamesDifficult == 2) {
             log.trace("Getting real winner, if difficulty is easy or we have played 2 or 3 games in difficulty mode");
             switch (playerchoice) {
@@ -185,10 +187,9 @@ public class Main {
                     break;
             }
         }
-        if (properties.getProperty("difficulty").equals("2") && gamesDifficult == 0 || gamesDifficult == 4){
+        if (properties.getProperty("difficulty").equals("2") && gamesDifficult == 0 || gamesDifficult == 3){
             log.trace("The computer wins because of the difficulty");
             println("WinnerComputer");
-            if (gamesDifficult == 4) gamesDifficult = 0;
         }
 
 
